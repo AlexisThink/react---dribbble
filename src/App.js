@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import Filters from './components/Filters';
-import Shot from './components/Shot';
+import Shots from './components/Shots';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <Filters />
-        <Shot />
+        <Shots />
       </div>
     );
   }
