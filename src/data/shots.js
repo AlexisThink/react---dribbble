@@ -188,3 +188,5 @@ export const infoShots = [{
     },
     section: 'debut'
   }];
+
+  export default infoShots;

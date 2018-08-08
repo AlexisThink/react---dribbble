@@ -10,6 +10,7 @@ class Shots extends React.Component{
             {
               infoShots.map(function(currentShot){
                 return <Shot 
+                    key = {currentShot.key}
                     image = {currentShot.img}
                     views = {currentShot.stats[0]}
                     comments = {currentShot.stats[1]}

@@ -4,7 +4,7 @@ class Cover extends React.Component{
     render(){
         return(
             <figure>
-                <img src={this.props.image} />
+                <img src={this.props.image} alt = "Dribble"/>
             </figure>
         );
     }
