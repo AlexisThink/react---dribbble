@@ -4,9 +4,9 @@ class Stats extends React.Component{
     render(){
         return(
             <ul className='shots__list'>
-            <li><i className='fa fa-eye' />3,827</li>
-            <li><i className='fa fa-comment' />17</li>
-            <li><i className='fa fa-heart' />322</li>
+            <li><i className='fa fa-eye' />{this.props.views}</li>
+            <li><i className='fa fa-comment' />{this.props.comments}</li>
+            <li><i className='fa fa-heart' />{this.props.hearts}</li>
             </ul>
         );
     }

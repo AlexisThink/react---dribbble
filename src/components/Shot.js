@@ -7,9 +7,9 @@ class Shot extends React.Component{
         return(
             <div className='container'>
                 <article className='shot'>
-                    <Cover />
+                    <Cover image={this.props.image} />
                 <div className='shots__stats'>
-                    <Stats />
+                    <Stats views={this.props.views} comments={this.props.comments} hearts={this.props.hearts} />
                 </div>
                 </article>
             </div>
