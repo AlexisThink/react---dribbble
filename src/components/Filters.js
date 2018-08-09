@@ -4,16 +4,16 @@ class Filters extends React.Component{
     render(){
         return(
             <div className = "filters">
-                <select>
+                {/* <select>
                     <option>Popular</option>
                     <option>Recent</option>
                     <option>Debut</option>
-                </select>
+                </select> */}
 
 
-                    {/* <button>Popular</button>
+                    <button>Popular</button>
                     <button>Recent</button>
-                    <button>Debut</button> */}
+                    <button>Debut</button>
                
             </div>
         );

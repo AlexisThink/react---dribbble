@@ -26,8 +26,34 @@ body {
   color: white;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   
+}
+
+.filters button{
+
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 15px;
+  color: black;
+
+  height: 30px;
+}
+
+a{
+  color: #aaa
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+.liked{
+  color: red;
 }

@@ -4,7 +4,6 @@ import infoShots from '../data/shots';
 
 class Shots extends React.Component{
     render(){
-        console.log(infoShots);
         return(
             <div className="container">
             {
