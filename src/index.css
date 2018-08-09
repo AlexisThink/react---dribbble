@@ -18,3 +18,16 @@ body {
   width: auto;
 }
 
+.filters{
+  width: 100%;
+  height: 50px;
+
+  background-color: #ea4c89;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}

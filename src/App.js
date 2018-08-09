@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Shots from './components/Shots';
 import Header from './components/Header'
+import Filters from './components/Filters';
+import Shots from './components/Shots';
+
 import {name, year} from './data/autor';
 import './App.css';
 
@@ -15,6 +17,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <Filters />
         <Shots />
         <p style = {styles} >Written by {name}, {year}</p>
       </div>
