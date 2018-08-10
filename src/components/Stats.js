@@ -1,31 +1,35 @@
 import React from 'react';
-var counter = 0;
 
 class Stats extends React.Component{
     constructor(props){
         super();
+
         this.state = {
             likes: props.hearts,
-            className: "fa fa-heart"
+            className: "fa fa-heart",
+            counter: 0
         };
     }
 
     incrementLikes = (event) => {
         event.preventDefault();
-        counter += 1
+        this.setState({
+            counter: this.state.counter += 1 
+        })
 
-        if (counter === 1){
+        if (this.state.counter === 1){
             this.setState({        
                 likes: parseInt(this.state.likes) + 1,
                 className:"fa fa-heart liked"
             })
+        }
 
-        } else{
+        if (this.state.counter === 2){
             this.setState({        
                 likes: parseInt(this.state.likes) - 1,
-                className:"fa fa-heart"
+                className:"fa fa-heart",
+                counter: 0
             })
-            counter = 0;
         }
     }
 
